@@ -2,6 +2,9 @@
 
 resolvers += "Prize Ltd" at "s3://repo.prize.ltd.uk/maven"
 
+publishMavenStyle := true
+publishTo := Some("Prize Ltd" at "s3://repo.prize.ltd.uk/maven")
+
 
 lazy val root = (project in file(".")).
   settings(

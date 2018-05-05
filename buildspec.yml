@@ -1,0 +1,17 @@
+artifacts:
+  files: "hello_2.12-0.1.0-SNAPSHOT.jar"
+  base-directory: "target/scala-2.12/"
+phases:
+  build:
+    commands:
+      - env
+      - sbt showS3Credentials s3://repo.prize.ltd.uk
+      - sbt clean compile 
+  install:
+    commands: [echo Nothing to do in the install phase...]
+  post_build:
+    commands: [echo Build completed on `date`]
+  pre_build:
+    commands: [echo Nothing to do in the pre_build phase...]
+version: 0.2
+
