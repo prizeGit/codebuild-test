@@ -5,7 +5,7 @@ phases:
     commands:
       - env
       - sbt 'showS3Credentials s3://repo.prize.ltd.uk'
-      - sbt clean compile 
+      - sbt clean package 
   install:
     commands: [echo Nothing to do in the install phase...]
   post_build:
