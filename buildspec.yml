@@ -1,6 +1,5 @@
 artifacts:
-  files: "hello_2.12-0.1.0-SNAPSHOT.jar"
-  base-directory: "target/scala-2.12/"
+  files: [target/scala-2.12/hello_2.12-0.1.0-SNAPSHOT.jar]
 phases:
   build:
     commands:
